@@ -1,0 +1,10 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" rx="48" fill="#F4E7D7"/>
+  <rect x="54" y="54" width="792" height="992" rx="40" fill="#FFF9F1"/>
+  <circle cx="450" cy="360" r="132" fill="#E8CFAF"/>
+  <path d="M246 808C246 671.586 336.586 581 473 581H427C563.414 581 654 671.586 654 808V859H246V808Z" fill="#D6B38A"/>
+  <rect x="188" y="912" width="524" height="60" rx="30" fill="#E9D8C2"/>
+  <text x="450" y="954" fill="#7C4A1D" font-family="Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">
+    Снимка на майстора
+  </text>
+</svg>

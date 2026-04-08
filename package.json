@@ -1,0 +1,25 @@
+{
+  "name": "tatko",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "lucide-react": "^0.542.0",
+    "next": "^16.2.2",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^24.6.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^5.9.3"
+  }
+}

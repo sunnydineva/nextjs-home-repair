@@ -1,0 +1,13 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#F6F3EE"/>
+  <rect x="70" y="90" width="480" height="720" rx="36" fill="#E5E7EB"/>
+  <rect x="650" y="90" width="480" height="720" rx="36" fill="#FFF7ED"/>
+  <text x="160" y="180" fill="#6B7280" font-family="Arial, sans-serif" font-size="54" font-weight="700">ПРЕДИ</text>
+  <text x="742" y="180" fill="#92400E" font-family="Arial, sans-serif" font-size="54" font-weight="700">СЛЕД</text>
+  <rect x="120" y="260" width="380" height="360" rx="18" fill="#CBD5E1"/>
+  <rect x="700" y="260" width="380" height="360" rx="18" fill="#D6B98B"/>
+  <path d="M120 620L500 620L500 690L120 690V620Z" fill="#94A3B8"/>
+  <path d="M700 620L1080 620L1080 690L700 690V620Z" fill="#B07E40"/>
+  <text x="310" y="765" fill="#4B5563" font-family="Arial, sans-serif" font-size="34" text-anchor="middle">Стар под</text>
+  <text x="890" y="765" fill="#92400E" font-family="Arial, sans-serif" font-size="34" text-anchor="middle">Нов ламинат</text>
+</svg>
