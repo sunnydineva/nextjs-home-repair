@@ -303,7 +303,7 @@ export const bgContent: HomeCopy = {
       name: "Име",
       phone: "Телефон",
       service: "Услуга",
-      message: "Опишете ремонта",
+      message: "Съобщение",
       submit: "Изпрати",
     },
   },
