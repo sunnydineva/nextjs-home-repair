@@ -17,12 +17,18 @@ export function Hero({ content }: HeroProps) {
   const panelEyebrow = content.locale === "bg" ? "Бързо и надеждно" : "Fast and reliable";
 
   return (
-    <section className="section-shell grid gap-10 py-14 sm:py-18 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-24">
+    <section
+      aria-labelledby="hero-title"
+      className="section-shell grid gap-10 py-14 sm:py-18 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-24"
+    >
       <div className="fade-in">
         <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[var(--brand-dark)]">
           {content.hero.eyebrow}
         </p>
-        <h1 className="text-balance max-w-3xl font-serif text-5xl font-semibold leading-none tracking-tight text-slate-950 sm:text-6xl">
+        <h1
+          id="hero-title"
+          className="text-balance max-w-3xl font-serif text-5xl font-semibold leading-none tracking-tight text-slate-950 sm:text-6xl"
+        >
           {content.hero.title}
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-[var(--muted)]">{content.hero.subtitle}</p>

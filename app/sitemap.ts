@@ -1,20 +1,34 @@
 import type { MetadataRoute } from "next";
 
+import { bgContent, enContent, getAbsoluteUrl } from "@/data/site";
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://tatko-repair.example";
+  const lastModified = new Date();
 
   return [
     {
-      url: `${baseUrl}/`,
-      lastModified: new Date(),
+      url: getAbsoluteUrl(bgContent.seo.path),
+      lastModified,
       changeFrequency: "monthly",
       priority: 1,
+      alternates: {
+        languages: {
+          bg: getAbsoluteUrl(bgContent.seo.path),
+          en: getAbsoluteUrl(enContent.seo.path),
+        },
+      },
     },
     {
-      url: `${baseUrl}/en`,
-      lastModified: new Date(),
+      url: getAbsoluteUrl(enContent.seo.path),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
+      alternates: {
+        languages: {
+          bg: getAbsoluteUrl(bgContent.seo.path),
+          en: getAbsoluteUrl(enContent.seo.path),
+        },
+      },
     },
   ];
 }

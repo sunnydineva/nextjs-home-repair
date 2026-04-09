@@ -11,12 +11,13 @@ export function Gallery({ content }: GalleryProps) {
   const badge = content.locale === "bg" ? "Преди / След" : "Before / After";
 
   return (
-    <section id="gallery" className="section-shell py-18 sm:py-24">
+    <section id="gallery" aria-labelledby="gallery-title" className="section-shell py-18 sm:py-24">
       <SectionHeading
         eyebrow={content.gallery.eyebrow}
         title={content.gallery.title}
         description={content.gallery.description}
         align="center"
+        titleId="gallery-title"
       />
 
       <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">

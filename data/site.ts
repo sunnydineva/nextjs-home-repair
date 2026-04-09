@@ -25,6 +25,7 @@ export type HomeCopy = {
     title: string;
     description: string;
     path: string;
+    keywords: string[];
   };
   nav: {
     services: string;
@@ -78,10 +79,25 @@ export type HomeCopy = {
   };
 };
 
+const fallbackSiteUrl = "https://varnamaistor.com";
+
+export const siteConfig = {
+  siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? fallbackSiteUrl).replace(/\/+$/, ""),
+  siteName: "Varna Maistor",
+  siteNameBg: "Варна Майстор",
+  defaultLocale: "bg" as const,
+  countryCode: "BG",
+};
+
+export function getAbsoluteUrl(path: string) {
+  return new URL(path, `${siteConfig.siteUrl}/`).toString();
+}
+
 export const business = {
-  name: "Tatko Repair",
-  owner: "Татко Ремонт",
+  name: "Varna Maistor",
+  owner: " Майстор",
   city: "Варна",
+  country: "България",
   phoneDisplay: "+359 887 260 217",
   phoneHref: "tel:+359887260217",
   whatsappHref: "https://wa.me/359887260217",
@@ -185,10 +201,22 @@ export const serviceMedia: Record<string, ServiceMedia> = {
 export const bgContent: HomeCopy = {
   locale: "bg",
   seo: {
-    title: "Качествени ремонти за вашия дом | Татко Ремонт Варна",
+    title: "Домашен майстор и дребни ремонти във Варна | Варна Майстор",
     description:
-      "Малки и средни ремонти за апартаменти във Варна: гипсокартон, ламинат, окачени тавани, плочки, ел. и ВиК ремонти.",
+      "Домашен майстор за Варна и дребни ремонти в дома: гипсокартон, ламинат, окачени тавани, плочки, електроуслуги, ВиК услуги и сглобяване на мебели.",
     path: "/",
+    keywords: [
+      "домашен майстор Варна",
+      "дребни ремонти Варна",
+      "майстор за ремонти Варна",
+      "гипсокартон Варна",
+      "ламинат Варна",
+      "окачени тавани Варна",
+      "плочки Варна",
+      "електроуслуги Варна",
+      "ВиК услуги Варна",
+      "сглобяване на мебели Варна",
+    ],
   },
   nav: {
     services: "Услуги",
@@ -315,10 +343,20 @@ export const bgContent: HomeCopy = {
 export const enContent: HomeCopy = {
   locale: "en",
   seo: {
-    title: "Reliable Home Repairs in Varna | Tatko Repair",
+    title: "Reliable Handyman Services in Varna | Varna Maistor",
     description:
       "Fast, clean and personal repair services in Varna for apartments and homes: drywall, laminate, ceilings, tiles, electrical and plumbing fixes.",
     path: "/en",
+    keywords: [
+      "home repairs Varna",
+      "handyman Varna",
+      "drywall Varna",
+      "laminate flooring Varna",
+      "suspended ceilings Varna",
+      "electrical repairs Varna",
+      "plumbing repairs Varna",
+      "small renovation services Varna",
+    ],
   },
   nav: {
     services: "Services",

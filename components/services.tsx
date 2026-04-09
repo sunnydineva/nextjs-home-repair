@@ -32,11 +32,12 @@ export function Services({ content }: ServicesProps) {
   const getIcon = (title: string) => iconMap[title as keyof typeof iconMap] ?? Hammer;
 
   return (
-    <section id="services" className="section-shell py-18 sm:py-24">
+    <section id="services" aria-labelledby="services-title" className="section-shell py-18 sm:py-24">
       <SectionHeading
         eyebrow={content.services.eyebrow}
         title={content.services.title}
         description={content.services.description}
+        titleId="services-title"
       />
 
       <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">

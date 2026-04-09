@@ -9,11 +9,13 @@ type ContactProps = {
 
 export function Contact({ content }: ContactProps) {
   return (
-    <section id="contact" className="section-shell py-18 sm:py-24">
+    <section id="contact" aria-labelledby="contact-title" className="section-shell py-18 sm:py-24">
       <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="fade-in rounded-[calc(var(--radius)+0.25rem)] bg-slate-900 p-8 text-white shadow-[var(--shadow)]">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">{content.contact.eyebrow}</p>
-          <h2 className="mt-4 font-serif text-3xl font-semibold tracking-tight sm:text-4xl">{content.contact.title}</h2>
+          <h2 id="contact-title" className="mt-4 font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
+            {content.contact.title}
+          </h2>
           <p className="mt-4 max-w-lg text-lg leading-9 text-slate-300">{content.contact.description}</p>
 
           <div className="mt-8 space-y-3">

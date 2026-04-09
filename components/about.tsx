@@ -16,7 +16,7 @@ export function About({ content }: AboutProps) {
     content.locale === "bg" ? "Няколко думи за работата" : "A few words about the work";
 
   return (
-    <section id="about" className="section-shell py-18 sm:py-24">
+    <section id="about" aria-labelledby="about-title" className="section-shell py-18 sm:py-24">
       <div className="card-surface fade-in overflow-hidden rounded-[calc(var(--radius)+0.5rem)]">
         <div className="grid lg:grid-cols-[0.92fr_1.08fr]">
           <figure className="relative min-h-[440px] overflow-hidden lg:min-h-[760px]">
@@ -33,7 +33,7 @@ export function About({ content }: AboutProps) {
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-[var(--brand-dark)]">
                 {content.about.eyebrow}
               </p>
-              <h2 className="text-balance font-serif text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+              <h2 id="about-title" className="text-balance font-serif text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
                 {content.about.title}
               </h2>
             </div>
